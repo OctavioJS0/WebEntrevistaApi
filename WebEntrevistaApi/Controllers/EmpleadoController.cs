@@ -94,6 +94,7 @@ public class EmpleadoController : ControllerBase
         return NoContent();
     }
 
+    // Excepción de PUT
     private bool EmpleadoExists(int id)
     {
         return _entrevistaDbContext.Empleados.Any(e => e.Id == id);
